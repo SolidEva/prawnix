@@ -61,6 +61,8 @@
     yt-dlp
   ];
 
+  programs.steam.enable = true;
+
   users.users.${user}.extraGroups = ["adbusers" "kvm"]; # for android dev
 
   # enable thunderbolt configuration
