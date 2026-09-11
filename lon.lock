@@ -22,16 +22,6 @@
       "url": "https://github.com/nix-community/lanzaboote/archive/v1.1.0.tar.gz",
       "hash": "sha256-hqijVSEETttmo8Okql9/LG0Ua34hdciKW1a5zzlj8mU="
     },
-    "wrappers": {
-      "type": "GitHub",
-      "fetchType": "tarball",
-      "owner": "BirdeeHub",
-      "repo": "nix-wrapper-modules",
-      "branch": "main",
-      "revision": "b56e973dd2bd62244b44d6542fb52182bc3a3cda",
-      "url": "https://github.com/BirdeeHub/nix-wrapper-modules/archive/b56e973dd2bd62244b44d6542fb52182bc3a3cda.tar.gz",
-      "hash": "sha256-Dn6IPaLyltx8hBTyC4hgNWDb7T7WHRYUG6wWh6KBHXA="
-    },
     "nixos-hardware": {
       "type": "GitHub",
       "fetchType": "tarball",
@@ -68,9 +58,9 @@
       "owner": "NixOS",
       "repo": "nixpkgs",
       "branch": "nixos-26.05",
-      "revision": "8eeec934ae0dbeca3d7868c059568a65c08b2fc3",
-      "url": "https://github.com/NixOS/nixpkgs/archive/8eeec934ae0dbeca3d7868c059568a65c08b2fc3.tar.gz",
-      "hash": "sha256-lDebytrYdd47IBLwvNOD+6AGeoqZ78CIKlp70hzW280="
+      "revision": "d58a46e3bc02d91ebe04667f8397752a749c0024",
+      "url": "https://github.com/NixOS/nixpkgs/archive/d58a46e3bc02d91ebe04667f8397752a749c0024.tar.gz",
+      "hash": "sha256-GB16oaxpsrnGNnGIE+0uYBqMRzB9X6FYDUvjvnJAYew="
     },
     "nixpkgs-mistral-firmware": {
       "type": "GitHub",
@@ -152,6 +142,16 @@
       "revision": "9ed65852b6257fbeae4355bc24ecfea307ca759a",
       "url": "https://github.com/mic92/sops-nix/archive/9ed65852b6257fbeae4355bc24ecfea307ca759a.tar.gz",
       "hash": "sha256-Gq8KNx5A7hBB3uGJaj6eQfLDIz5YdLu92gqBcvHvoUo="
+    },
+    "wrappers": {
+      "type": "GitHub",
+      "fetchType": "tarball",
+      "owner": "BirdeeHub",
+      "repo": "nix-wrapper-modules",
+      "branch": "main",
+      "revision": "b56e973dd2bd62244b44d6542fb52182bc3a3cda",
+      "url": "https://github.com/BirdeeHub/nix-wrapper-modules/archive/b56e973dd2bd62244b44d6542fb52182bc3a3cda.tar.gz",
+      "hash": "sha256-Dn6IPaLyltx8hBTyC4hgNWDb7T7WHRYUG6wWh6KBHXA="
     }
   }
 }
