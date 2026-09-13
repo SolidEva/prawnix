@@ -123,6 +123,16 @@
       "lastModified": 1781444902,
       "submodules": false
     },
+    "prawnix-secrets-rex": {
+      "type": "Git",
+      "fetchType": "git",
+      "branch": "main",
+      "revision": "37923f4a75a5d3aab3c531e83727f9367483ccbe",
+      "url": "/home/eva/prawnix-secrets-rex/",
+      "hash": "sha256-IQkJ6CwL9qyGvcSnwtgOZLIRhuJo3Ojrv68scYriZK0=",
+      "lastModified": 1789303174,
+      "submodules": false
+    },
     "prawnix-secrets-solidsnake": {
       "type": "Git",
       "fetchType": "git",
