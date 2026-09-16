@@ -17,6 +17,7 @@ in
   environment.systemPackages = [
     pkgs.helix
     pkgs.typos-lsp
+    pkgs.yaml-language-server
   ];
 
   environment.variables.EDITOR = "hx";
