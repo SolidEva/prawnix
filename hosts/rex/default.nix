@@ -18,6 +18,8 @@ in
       ./hardware-configuration.nix
       # platform specific configuration
       (self + /modules/platform/${platform}.nix)
+      # configure zswap as swap
+      (self + /modules/swap/zswap.nix)
       # application suite
       (self + /modules/applications/minimal-dev.nix)
     ];
@@ -25,6 +27,11 @@ in
   boot.binfmt.emulatedSystems = [
     "aarch64-linux"
   ];
+
+  swapDevices = lib.mkForce [ {
+    device = "/var/lib/swapfile";
+    size = 64*1024;
+  } ];
 
   networking.hostName = "${hostname}"; # Define your hostname.
 
