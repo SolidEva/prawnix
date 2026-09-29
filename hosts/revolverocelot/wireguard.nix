@@ -91,6 +91,15 @@ in
             "beef:beef:beef::4/128"
             "192.168.26.4/32"
           ];
+          PresharedKeyFile = config.sops.secrets."wireguard/presharedkey/sunny".path;
+        }
+        {
+          PublicKey = secrets.wireguard_android_pub;
+          AllowedIPs = [
+            "beef:beef:beef::5/128"
+            "192.168.26.5/32"
+          ];
+          PresharedKeyFile = config.sops.secrets."wireguard/presharedkey/android".path;
         }
       ];
     };
