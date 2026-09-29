@@ -117,10 +117,10 @@
       "type": "Git",
       "fetchType": "git",
       "branch": "main",
-      "revision": "20359a21d5efc570ae0e4ca1fa73c7c8b7e23f7d",
+      "revision": "95f6988669915d18d409c6d94e0211f872131d37",
       "url": "/home/eva/prawnix-secrets-revolverocelot/",
-      "hash": "sha256-5lwG8j5gSd1C3VlLJwq5jKPQxalY40oKnQZZCOUamOI=",
-      "lastModified": 1790694310,
+      "hash": "sha256-ML6Y1aIOpEEiaJAGnc4D6CVg6Q3/FFoy7UtBRJWU0ic=",
+      "lastModified": 1790697591,
       "submodules": false
     },
     "prawnix-secrets-rex": {

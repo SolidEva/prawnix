@@ -21,6 +21,16 @@ in
         group = "systemd-network";
         mode = "0640";
       };
+      "wireguard/presharedkey/sunny" = {
+        owner = "systemd-network";
+        group = "systemd-network";
+        mode = "0640";
+      };
+      "wireguard/presharedkey/android" = {
+        owner = "systemd-network";
+        group = "systemd-network";
+        mode = "0640";
+      };
     };
   };
  }
