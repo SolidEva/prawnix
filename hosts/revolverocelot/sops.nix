@@ -16,6 +16,11 @@ in
         owner = "root";
         mode = "0600";
       };
+      "wireguard/privatekey" = {
+        owner = "systemd-network";
+        group = "systemd-network";
+        mode = "0640";
+      };
     };
   };
  }

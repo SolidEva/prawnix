@@ -20,6 +20,7 @@ in
       ./sops.nix
       ./email.nix
       ./web.nix
+      ./wireguard.nix
       # platform specific configuration
       (self + /modules/platform/${platform}.nix)
       # disko
