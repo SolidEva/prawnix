@@ -36,6 +36,20 @@ in
 
   networking.hostName = "${hostname}"; # Define your hostname.
 
+  boot.initrd.systemd.enable = true;
+
+  boot.lanzaboote = {
+      configurationLimit = 8;
+      measuredBoot = {
+      enable = true;
+      pcrs = [
+        0
+        4
+        7
+      ];
+    };
+  };
+
   swapDevices = lib.mkForce [ {
     device = "/var/lib/swapfile";
     size = 8*1024; # 8GiB, in MiB
