@@ -82,4 +82,9 @@
   services.usbmuxd.enable = true;
 
   programs.direnv.enable = true;
+
+  programs.tmux = {
+    enable = true;
+    extraConfig = "set -g mouse on";
+  };
 }
