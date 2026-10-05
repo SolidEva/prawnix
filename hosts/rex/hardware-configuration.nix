@@ -30,6 +30,16 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  environment.etc."crypttab".text = ''
+    crypt_build /dev/disk/by-uuid/51a0e010-db4a-4db9-a05f-66d84eac604b none nofail
+  '';
+
+  fileSystems."/media/build" = {
+      device = "/dev/disk/by-uuid/89868ab6-90ae-4e80-838a-c8802e64857a";
+      fsType = "ext4";
+      options = [ "nofail" ];
+  };
+
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
