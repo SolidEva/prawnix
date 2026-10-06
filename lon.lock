@@ -22,6 +22,16 @@
       "url": "https://github.com/nix-community/lanzaboote/archive/v1.1.0.tar.gz",
       "hash": "sha256-hqijVSEETttmo8Okql9/LG0Ua34hdciKW1a5zzlj8mU="
     },
+    "nixos-apple-silicon": {
+      "type": "GitHub",
+      "fetchType": "tarball",
+      "owner": "nix-community",
+      "repo": "nixos-apple-silicon",
+      "branch": "main",
+      "revision": "release-2026-07-30",
+      "url": "https://github.com/nix-community/nixos-apple-silicon/archive/release-2026-07-30.tar.gz",
+      "hash": "sha256-QHAP8KsJQmI+dpNS/wfWAtEBQ0Zby+B0Ty+qZIO/U2w="
+    },
     "nixos-hardware": {
       "type": "GitHub",
       "fetchType": "tarball",
@@ -91,6 +101,16 @@
       "url": "/home/eva/prawnix-secrets-decoyoctopus/",
       "hash": "sha256-BaQ0aOAH8SFSnmtnGfhmokrNs+bRIm30IpN5lYe2uVo=",
       "lastModified": 1774026740,
+      "submodules": false
+    },
+    "prawnix-secrets-egg": {
+      "type": "Git",
+      "fetchType": "git",
+      "branch": "main",
+      "revision": "8fdc3614abedae6064c219df64b6a6552ebae2e1",
+      "url": "/home/eva/prawnix-secrets-egg/",
+      "hash": "sha256-9NZ7onk83o5B3FLxcwa0JDdGeVZVTKF6/9StQGrepSg=",
+      "lastModified": 1791395790,
       "submodules": false
     },
     "prawnix-secrets-mistral": {
