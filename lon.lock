@@ -22,6 +22,16 @@
       "url": "https://github.com/nix-community/lanzaboote/archive/v1.1.0.tar.gz",
       "hash": "sha256-hqijVSEETttmo8Okql9/LG0Ua34hdciKW1a5zzlj8mU="
     },
+    "nixos-apple-silicon": {
+      "type": "GitHub",
+      "fetchType": "tarball",
+      "owner": "nix-community",
+      "repo": "nixos-apple-silicon",
+      "branch": "main",
+      "revision": "release-2026-07-30",
+      "url": "https://github.com/nix-community/nixos-apple-silicon/archive/release-2026-07-30.tar.gz",
+      "hash": "sha256-QHAP8KsJQmI+dpNS/wfWAtEBQ0Zby+B0Ty+qZIO/U2w="
+    },
     "nixos-hardware": {
       "type": "GitHub",
       "fetchType": "tarball",
