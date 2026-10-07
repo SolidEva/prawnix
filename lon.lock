@@ -107,10 +107,10 @@
       "type": "Git",
       "fetchType": "git",
       "branch": "main",
-      "revision": "8fdc3614abedae6064c219df64b6a6552ebae2e1",
+      "revision": "91c788302d0a32221913e05f842d3609891db028",
       "url": "/home/eva/prawnix-secrets-egg/",
-      "hash": "sha256-9NZ7onk83o5B3FLxcwa0JDdGeVZVTKF6/9StQGrepSg=",
-      "lastModified": 1791395790,
+      "hash": "sha256-cDJcVoY8SuFhzLsOu2HSctJyoQJFkg3sVdKbYG9HRBI=",
+      "lastModified": 1791398308,
       "submodules": false
     },
     "prawnix-secrets-mistral": {
