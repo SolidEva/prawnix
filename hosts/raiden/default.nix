@@ -33,6 +33,7 @@ in
       (self + /modules/alacritty/${platform}.nix)
       # application suite
       (self + /modules/applications/graphical-full.nix)
+      (self + /modules/applications/graphical-x86.nix)
       # application specific inclusions/configurations
       (self + /modules/applications/configs/firefox-work.nix)
       (self + /modules/applications/configs/wireguard.nix)

@@ -35,7 +35,6 @@
     keepassxc
     libreoffice-qt
     mpv
-    tor-browser
     vlc
 
     #filesystem management

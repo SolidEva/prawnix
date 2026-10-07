@@ -11,7 +11,6 @@
     # application specific configs
     # these might be desirable in a smaller config
     # and require more than just a one line change to include
-    ./configs/qemu.nix
     ./configs/syncthing.nix
   ];
 
@@ -31,7 +30,6 @@
     cinny-desktop
     deezer-desktop
     devcontainer # used for zmk build
-    discord
     drawio
     element-desktop
     easyeffects # improve sound
@@ -50,8 +48,6 @@
     sabnzbd
     signal-desktop
     smartmontools
-    spotify
-    steam-run
     telegram-desktop
     thunderbird
     tlp # power monitoring
@@ -61,16 +57,7 @@
     yt-dlp
   ];
 
-  programs.steam.enable = true;
-
   users.users.${user}.extraGroups = ["adbusers" "kvm"]; # for android dev
-
-  # enable thunderbolt configuration
-  # thunderbolt devices still likely need to be enrolled depending on your setting here
-  # cat /sys/bus/thunderbolt/devices/domain0/security
-  # https://nixos.wiki/wiki/Thunderbolt
-  # https://wiki.archlinux.org/title/Thunderbolt
-  services.hardware.bolt.enable = true;
 
   # required for element desktop
   services.gnome.gnome-keyring.enable = true;

@@ -27,6 +27,7 @@ in
       (self + /modules/alacritty/${platform}.nix)
       # application suite
       (self + /modules/applications/graphical-full.nix)
+      (self + /modules/applications/graphical-x86.nix)
       # secure boot
       (self + /modules/bootsecurity/secureboot.nix)
       # application specific inclusions/configurations
