@@ -45,6 +45,7 @@ in
 
   environment.systemPackages = with pkgs; [
     alacritty
+    brightnessctl
     swaybg
     swaylock
     swayidle
