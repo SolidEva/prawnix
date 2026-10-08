@@ -31,6 +31,7 @@ in
       "${sources.prawnix-secrets-egg}/remote-builders-optional.nix"
 
       (apple-silicon-support + /apple-silicon-support)
+      ./waybar.nix
     ];
 
   networking.hostName = "${hostname}"; # Define your hostname.
