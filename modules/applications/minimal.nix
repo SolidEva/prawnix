@@ -49,6 +49,10 @@
     pciutils
     usbmuxd
 
+    # signing tools
+    cosign
+    sbsigntool
+    openssl
   ];
 
   programs.gnupg.agent = {
