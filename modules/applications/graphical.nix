@@ -31,7 +31,6 @@
   environment.systemPackages = with pkgs; [
     calibre
     gimp
-    handbrake
     keepassxc
     libreoffice-qt
     mpv

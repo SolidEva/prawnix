@@ -16,6 +16,9 @@
     spotify
     tor-browser
     steam-run
+
+    # not x86 only, but annoying to build on arm
+    handbrake
   ];
 
   programs.steam.enable = false;
