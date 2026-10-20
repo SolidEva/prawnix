@@ -9,6 +9,8 @@
           ssh -t $argv "tmux a || tmux"
         end
         set -g fish_greeting ""
+
+        set -g hydro_symbol_start "$(set_color -o normal)$(prompt_hostname)$(set_color --reset):"
       '';
   };
 
