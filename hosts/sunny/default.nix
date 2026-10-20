@@ -10,6 +10,7 @@ let
   # must be one of the .nix files in modules/platform
   platform = "laptop";
 
+  apple-silicon-support = (import sources.nixos-apple-silicon {});
 in
 {
   imports =
@@ -25,31 +26,19 @@ in
       (self + /modules/wallpapers/default.nix)
       # use alacritty
       (self + /modules/alacritty/${platform}.nix)
-      # application suite
       (self + /modules/applications/graphical-full.nix)
-      (self + /modules/applications/graphical-x86.nix)
-      # secure boot
-      (self + /modules/bootsecurity/secureboot.nix)
-      # application specific inclusions/configurations
-      (self + /modules/applications/configs/firefox-work.nix)
       (self + /modules/applications/configs/wireguard.nix)
+      "${sources.prawnix-secrets-sunny}/remote-builders-optional.nix"
+
+      (apple-silicon-support + /apple-silicon-support)
+      ./waybar.nix
     ];
 
   networking.hostName = "${hostname}"; # Define your hostname.
 
   boot.initrd.systemd.enable = true;
 
-  boot.lanzaboote = {
-      configurationLimit = 8;
-      measuredBoot = {
-      enable = true;
-      pcrs = [
-        0
-        4
-        7
-      ];
-    };
-  };
+  hardware.sensor.iio.enable = true;
 
   swapDevices = lib.mkForce [ {
     device = "/var/lib/swapfile";
@@ -62,8 +51,14 @@ in
       enable = true;
       configurationLimit = 10;
     };
-    efi.canTouchEfiVariables = true;  # Usually true for most systems
+    efi.canTouchEfiVariables = false; # apple silicon specialty
   };
+
+  hardware.asahi.enable = true;
+  # disable avd for now
+  # avd-fw is not in stable, and unstable has too many broken packages right now
+  hardware.asahi.avd.enable = false;
+  networking.networkmanager.wifi.backend = "iwd";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
@@ -71,5 +66,5 @@ in
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "26.05"; # Did you read the comment?
 }
