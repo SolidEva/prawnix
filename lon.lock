@@ -7,9 +7,9 @@
       "owner": "nix-community",
       "repo": "disko",
       "branch": "master",
-      "revision": "115e5211780054d8a890b41f0b7734cafad54dfe",
-      "url": "https://github.com/nix-community/disko/archive/115e5211780054d8a890b41f0b7734cafad54dfe.tar.gz",
-      "hash": "sha256-eTAlX0CwgB84Ts3GaBd944A3DRXVMzgA0EqroZBISUo="
+      "revision": "725ea35e410ad83be4931d1bff7e090eacaf3563",
+      "url": "https://github.com/nix-community/disko/archive/725ea35e410ad83be4931d1bff7e090eacaf3563.tar.gz",
+      "hash": "sha256-uZkBR7yHdIKUFB5SZdfgh1qkGfI3XmYmI/lTiquxbck="
     },
     "lanzaboote": {
       "type": "GitHub",
@@ -28,9 +28,9 @@
       "owner": "nix-community",
       "repo": "nixos-apple-silicon",
       "branch": "main",
-      "revision": "release-2026-07-30",
-      "url": "https://github.com/nix-community/nixos-apple-silicon/archive/release-2026-07-30.tar.gz",
-      "hash": "sha256-QHAP8KsJQmI+dpNS/wfWAtEBQ0Zby+B0Ty+qZIO/U2w="
+      "revision": "12cd234285d3037cedfab979aa70b75284a59afc",
+      "url": "https://github.com/nix-community/nixos-apple-silicon/archive/12cd234285d3037cedfab979aa70b75284a59afc.tar.gz",
+      "hash": "sha256-A3JRH8qkp+NrP3sSwfutu7nZ5AclDY/HDmn/xDxduM4="
     },
     "nixos-hardware": {
       "type": "GitHub",
@@ -38,18 +38,18 @@
       "owner": "NixOS",
       "repo": "nixos-hardware",
       "branch": "master",
-      "revision": "4ed851c979641e28597a05086332d75cdc9e395f",
-      "url": "https://github.com/NixOS/nixos-hardware/archive/4ed851c979641e28597a05086332d75cdc9e395f.tar.gz",
-      "hash": "sha256-fPBRVf6A5xlACYcOI59shGrjURuvwu0lRsDoSCEXt/I="
+      "revision": "60a624466c08787ee8303393b7d4752d1826f14f",
+      "url": "https://github.com/NixOS/nixos-hardware/archive/60a624466c08787ee8303393b7d4752d1826f14f.tar.gz",
+      "hash": "sha256-BYhx89XJltnRyQeuDKHVL5eSqbbfAcOKuDts7QRsrxQ="
     },
     "nixos-mailserver": {
       "type": "Git",
       "fetchType": "git",
       "branch": "nixos-26.05",
-      "revision": "661ec59a97ccee13a63f79280b282eb6f7d3f817",
+      "revision": "b3e735a82a531e34ea3df3495026ca1d8a4e62fe",
       "url": "https://gitlab.com/simple-nixos-mailserver/nixos-mailserver",
-      "hash": "sha256-rq6WOopxq3U2AGEWO80o9LIJDYcYIdgw6jyl+y+19w8=",
-      "lastModified": 1781301671,
+      "hash": "sha256-ayqyWcMFat+/FPyzm6iABDWyQwqKw4dG5yY6tcmN53Y=",
+      "lastModified": 1792432400,
       "submodules": false
     },
     "nixos-pi-zero-2": {
@@ -68,9 +68,9 @@
       "owner": "NixOS",
       "repo": "nixpkgs",
       "branch": "nixos-26.05",
-      "revision": "d58a46e3bc02d91ebe04667f8397752a749c0024",
-      "url": "https://github.com/NixOS/nixpkgs/archive/d58a46e3bc02d91ebe04667f8397752a749c0024.tar.gz",
-      "hash": "sha256-GB16oaxpsrnGNnGIE+0uYBqMRzB9X6FYDUvjvnJAYew="
+      "revision": "f3a73bcf5d1c5b75a66cf35a48957e30d41d647a",
+      "url": "https://github.com/NixOS/nixpkgs/archive/f3a73bcf5d1c5b75a66cf35a48957e30d41d647a.tar.gz",
+      "hash": "sha256-qVt97ILUu2DorFGGEi+mqVuzOF8R18fQLgFkHiLrNfE="
     },
     "nixpkgs-mistral-firmware": {
       "type": "GitHub",
@@ -89,9 +89,9 @@
       "owner": "NixOS",
       "repo": "nixpkgs",
       "branch": "nixos-unstable",
-      "revision": "331800de5053fcebacf6813adb5db9c9dca22a0c",
-      "url": "https://github.com/NixOS/nixpkgs/archive/331800de5053fcebacf6813adb5db9c9dca22a0c.tar.gz",
-      "hash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw="
+      "revision": "09063bd1f2b36fd9fd793c36dfade7bd40a93dfc",
+      "url": "https://github.com/NixOS/nixpkgs/archive/09063bd1f2b36fd9fd793c36dfade7bd40a93dfc.tar.gz",
+      "hash": "sha256-Mh0PUaIv4nFY+8wAGonaEh8iBzwsmdNlwjVHmFg1Biw="
     },
     "prawnix-secrets-decoyoctopus": {
       "type": "Git",
@@ -169,9 +169,9 @@
       "owner": "mic92",
       "repo": "sops-nix",
       "branch": "master",
-      "revision": "9ed65852b6257fbeae4355bc24ecfea307ca759a",
-      "url": "https://github.com/mic92/sops-nix/archive/9ed65852b6257fbeae4355bc24ecfea307ca759a.tar.gz",
-      "hash": "sha256-Gq8KNx5A7hBB3uGJaj6eQfLDIz5YdLu92gqBcvHvoUo="
+      "revision": "44931708c62937c2b1bf7953902989fa5bb9ee1b",
+      "url": "https://github.com/mic92/sops-nix/archive/44931708c62937c2b1bf7953902989fa5bb9ee1b.tar.gz",
+      "hash": "sha256-YU1LjDe1o2Ymg5zEiCHbmMXLkDCtxHQRiVqZ3nC5GGk="
     },
     "wrappers": {
       "type": "GitHub",
@@ -179,9 +179,9 @@
       "owner": "BirdeeHub",
       "repo": "nix-wrapper-modules",
       "branch": "main",
-      "revision": "b56e973dd2bd62244b44d6542fb52182bc3a3cda",
-      "url": "https://github.com/BirdeeHub/nix-wrapper-modules/archive/b56e973dd2bd62244b44d6542fb52182bc3a3cda.tar.gz",
-      "hash": "sha256-Dn6IPaLyltx8hBTyC4hgNWDb7T7WHRYUG6wWh6KBHXA="
+      "revision": "a47eb4c736e3ff1ca95637d99672a39a7f7bd35c",
+      "url": "https://github.com/BirdeeHub/nix-wrapper-modules/archive/a47eb4c736e3ff1ca95637d99672a39a7f7bd35c.tar.gz",
+      "hash": "sha256-JdP4Csa9nONRva//83Kq9pEvTws2nYBTaJ3CCZHInf0="
     }
   }
 }
