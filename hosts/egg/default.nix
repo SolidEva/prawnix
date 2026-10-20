@@ -55,6 +55,9 @@ in
   };
 
   hardware.asahi.enable = true;
+  # disable avd for now
+  # avd-fw is not in stable, and unstable has too many broken packages right now
+  hardware.asahi.avd.enable = false;
   networking.networkmanager.wifi.backend = "iwd";
 
   # This value determines the NixOS release from which the default
