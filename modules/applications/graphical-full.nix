@@ -34,17 +34,12 @@
     element-desktop
     easyeffects # improve sound
     ffmpeg
-    freecad-wayland
-    ghidra # reverse engineering tools
-    kicad
-    krita
+    ghidra
     mediainfo
     mumble
     nvme-cli
-    openscad
     pdftk
     pdfchain
-    qFlipper
     sabnzbd
     signal-desktop
     smartmontools
