@@ -22,7 +22,23 @@ in
       (self + /modules/swap/zswap.nix)
       # application suite
       (self + /modules/applications/minimal-dev.nix)
+      # secrets
+      ./sops.nix
+
+      "${sources.graphenix}/nix/modules/graphenix.nix"
     ];
+
+  services.graphenix = {
+    enable = true;
+    dataDir = "/media/build/graphene/";
+    devices = {
+      tokay.signingKeysPasswordFile = "${config.sops.secrets."graphenix/tokay/password".path}";
+      caiman.signingKeysPasswordFile = "${config.sops.secrets."graphenix/caiman/password".path}";
+    };
+    updateServerHostname = secrets.graphenix.updateServerHostname;
+  };
+
+
 
   boot.binfmt.emulatedSystems = [
     "aarch64-linux"

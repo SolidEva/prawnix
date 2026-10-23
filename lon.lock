@@ -11,6 +11,16 @@
       "url": "https://github.com/nix-community/disko/archive/725ea35e410ad83be4931d1bff7e090eacaf3563.tar.gz",
       "hash": "sha256-uZkBR7yHdIKUFB5SZdfgh1qkGfI3XmYmI/lTiquxbck="
     },
+    "graphenix": {
+      "type": "GitHub",
+      "fetchType": "tarball",
+      "owner": "solidEva",
+      "repo": "graphenix",
+      "branch": "main",
+      "revision": "5a12ad05ce61cdc35326266b1945a10865a8b23a",
+      "url": "https://github.com/solidEva/graphenix/archive/5a12ad05ce61cdc35326266b1945a10865a8b23a.tar.gz",
+      "hash": "sha256-3zlGIAZtve8XIQ44LLaY1SJSQFO+tWKXK9ZMNPyiCVA="
+    },
     "lanzaboote": {
       "type": "GitHub",
       "fetchType": "tarball",
@@ -147,10 +157,10 @@
       "type": "Git",
       "fetchType": "git",
       "branch": "main",
-      "revision": "37923f4a75a5d3aab3c531e83727f9367483ccbe",
+      "revision": "ff1d93307f8ee2067a5b157c7f0c218ba32a24b2",
       "url": "/home/eva/prawnix-secrets-rex/",
-      "hash": "sha256-IQkJ6CwL9qyGvcSnwtgOZLIRhuJo3Ojrv68scYriZK0=",
-      "lastModified": 1789303174,
+      "hash": "sha256-26D0JMFVpt/vSTgnYweSajb49U0yQpTJVDT+58qWjks=",
+      "lastModified": 1792841575,
       "submodules": false
     },
     "prawnix-secrets-solidsnake": {
