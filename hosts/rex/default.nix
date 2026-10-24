@@ -25,6 +25,8 @@ in
       # secrets
       ./sops.nix
 
+      (self + /modules/applications/configs/syncthing.nix)
+
       "${sources.graphenix}/nix/modules/graphenix.nix"
     ];
 
@@ -37,7 +39,13 @@ in
     };
     updateServerHostname = secrets.graphenix.updateServerHostname;
   };
+  users.users.${user}.extraGroups = [ "graphenix" ];
 
+  # make the syncthing gui available off host
+  services.syncthing.guiAddress = "0.0.0.0:8384";
+  networking.firewall.allowedTCPPorts = [
+    8384
+  ];
 
 
   boot.binfmt.emulatedSystems = [
