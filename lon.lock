@@ -17,9 +17,9 @@
       "owner": "solidEva",
       "repo": "graphenix",
       "branch": "main",
-      "revision": "5a12ad05ce61cdc35326266b1945a10865a8b23a",
-      "url": "https://github.com/solidEva/graphenix/archive/5a12ad05ce61cdc35326266b1945a10865a8b23a.tar.gz",
-      "hash": "sha256-3zlGIAZtve8XIQ44LLaY1SJSQFO+tWKXK9ZMNPyiCVA="
+      "revision": "89b39ba3e73565bad103acc82752ed8f2bf2f5f6",
+      "url": "https://github.com/solidEva/graphenix/archive/89b39ba3e73565bad103acc82752ed8f2bf2f5f6.tar.gz",
+      "hash": "sha256-14luCWM0/v6kLde4waFp/92faItuWo/9rzvMTz9PdcU="
     },
     "lanzaboote": {
       "type": "GitHub",
