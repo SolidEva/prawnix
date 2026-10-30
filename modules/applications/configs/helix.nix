@@ -18,6 +18,7 @@ in
     pkgs.helix
     pkgs.typos-lsp
     pkgs.yaml-language-server
+    pkgs.markdown-oxide
   ];
 
   environment.variables.EDITOR = "hx";
