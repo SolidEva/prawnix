@@ -43,6 +43,9 @@
     (lib.hiPrio bind)
     dig
 
+    # signing tools
+    openssl
+
     # nix tools
     deadnix
     nixfmt
