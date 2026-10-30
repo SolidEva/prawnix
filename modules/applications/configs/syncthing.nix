@@ -14,6 +14,7 @@
     openDefaultPorts = true;
     # run as user
     user = user;
+    group = "users";
     # lets use the usual syncthing config rather than confiuring syncthing
     # with nix
     dataDir = "/home/${user}";  # default location for new folders
