@@ -1,7 +1,10 @@
 # minimal dev tools headless application set
 # graphical applications should go in either graphical or graphical-full
-{ pkgs, inputs, user, ... }:
+{ pkgs, inputs, user, sources, ... }:
+let
+  kopfrot = pkgs.callPackage "${sources.kopfrot}/nix/packages/kopfrot.nix" { };
 
+in
 {
   imports =
   [
@@ -35,6 +38,7 @@
     ruff # linter for python
     rustc
     treefmt
+    kopfrot
 
     # android dev
     android-tools
