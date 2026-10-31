@@ -19,6 +19,7 @@ in
     pkgs.typos-lsp
     pkgs.yaml-language-server
     pkgs.markdown-oxide
+    pkgs.rumdl
   ];
 
   environment.variables.EDITOR = "hx";
@@ -89,7 +90,7 @@ in
 
       [[language]]
       name = "markdown"
-      language-servers = [ "marksman", "markdown-oxide", "rumdl", "typos"]
+      language-servers = [ "markdown-oxide", "rumdl", "typos"]
     '';
   };
 
