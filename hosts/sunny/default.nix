@@ -42,7 +42,7 @@ in
 
   swapDevices = lib.mkForce [ {
     device = "/var/lib/swapfile";
-    size = 8*1024; # 8GiB, in MiB
+    size = 16*1024; # 8GiB, in MiB
   } ];
 
   # Bootloader.
