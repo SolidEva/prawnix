@@ -13,7 +13,7 @@
         set -g hydro_symbol_start "$(set_color -o normal)$(prompt_hostname)$(set_color --reset):"
       '';
     shellAbbrs = {
-      no = "hx --working-dir ~/note $(date +%F).md";
+      nes = "ne --shared";
     };
   };
 

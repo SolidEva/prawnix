@@ -1,14 +1,11 @@
 # minimal dev tools headless application set
 # graphical applications should go in either graphical or graphical-full
 { pkgs, inputs, user, sources, ... }:
-let
-  kopfrot = pkgs.callPackage "${sources.kopfrot}/nix/packages/kopfrot.nix" { };
-
-in
 {
   imports =
   [
     ./minimal.nix
+    "${sources.kopfrot}/nix/module/default.nix"
   ];
 
 # Allow unfree packages
@@ -38,7 +35,6 @@ in
     ruff # linter for python
     rustc
     treefmt
-    kopfrot
 
     # android dev
     android-tools
@@ -56,6 +52,14 @@ in
     nixd
     statix
   ];
+
+  programs.kopfrot = {
+    enable = true;
+    settings = {
+      vault_directory = "/home/eva/note";
+      template_directory = "/home/eva/note/shared/.templates/";
+    };
+  };
 
   # enable iphone tethering for iphone users
   services.usbmuxd.enable = true;
