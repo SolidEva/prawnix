@@ -13,7 +13,8 @@
         set -g hydro_symbol_start "$(set_color -o normal)$(prompt_hostname)$(set_color --reset):"
       '';
     shellAbbrs = {
-      nes = "ne --shared";
+      nes = "ne --subdir shared";
+      new = ''ne --subdir 'work' 'work_daily' "Work Daily Note $(date +%F)"'';
     };
   };
 
