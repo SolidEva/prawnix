@@ -1,0 +1,51 @@
+From 2c68d281abd33f782bdb3f3a545f06816b83d658 Mon Sep 17 00:00:00 2001
+From: Christian Schneider <schneider@search.ch>
+Date: Wed, 22 Apr 2026 16:43:05 +0200
+Subject: [PATCH] Add ctrl-enter in file pickers to open all matched entries
+
+BACKPORTED to latest release from https://github.com/helix-editor/helix/pull/15669
+
+---
+ book/src/keymap.md          |  1 +
+ helix-term/src/ui/picker.rs | 16 ++++++++++++++++
+ 2 files changed, 17 insertions(+)
+
+diff --git a/book/src/keymap.md b/book/src/keymap.md
+index d007d2b7cc30..29e660a4b0ab 100644
+--- a/book/src/keymap.md
++++ b/book/src/keymap.md
+@@ -465,6 +465,7 @@ See the documentation page on [pickers](./pickers.md) for more info.
+ | `End`                        | Go to last entry                                           |
+ | `Enter`                      | Open selected                                              |
+ | `Alt-Enter`                  | Open selected in the background without closing the picker |
++| `Ctrl-Enter`                 | Open all matched entries (e.g. files) with selected active |
+ | `Ctrl-s`                     | Open horizontally                                          |
+ | `Ctrl-v`                     | Open vertically                                            |
+ | `Ctrl-t`                     | Toggle preview                                             |
+diff --git a/helix-term/src/ui/picker.rs b/helix-term/src/ui/picker.rs
+index c61321f6fcac..f329ba1f45f1 100644
+--- a/helix-term/src/ui/picker.rs
++++ b/helix-term/src/ui/picker.rs
+@@ -1109,6 +1109,22 @@ impl<I: 'static + Send + Sync, D: 'static + Send + Sync> Component for Picker<I,
+                     (self.callback_fn)(ctx, option, Action::Replace);
+                 }
+             }
++            ctrl!(Enter) => {
++                for matched in self
++                    .matcher
++                    .snapshot()
++                    .matched_items(0..self.matcher.snapshot().matched_item_count())
++                    .map(|item| item.data)
++                    .rev()
++                {
++                    (self.callback_fn)(ctx, matched, Action::Replace);
++                }
++                // Open selected again so it is the active view
++                if let Some(option) = self.selection() {
++                    (self.callback_fn)(ctx, option, Action::Replace);
++                }
++                return close_fn(self);
++            }
+             key!(Enter) => {
+                 // If the prompt has a history completion and is empty, use enter to accept
+                 // that completion

@@ -10,10 +10,18 @@ let
       '';
     };
   };
+
+  helix-unwrapped-overlay = final: prev: {
+    helix-unwrapped = prev.helix-unwrapped.overrideAttrs (old: {
+      patches = (old.patches or []) ++ [
+        ./helix-ctrl-enter-open-all.patch
+        ];
+      });
+  };
 in
 {
 
-  nixpkgs.overlays = [ helix-overlay ];
+  nixpkgs.overlays = [ helix-overlay helix-unwrapped-overlay ];
   environment.systemPackages = [
     pkgs.helix
     pkgs.typos-lsp
