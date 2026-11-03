@@ -167,10 +167,10 @@
       "type": "Git",
       "fetchType": "git",
       "branch": "main",
-      "revision": "fe842511a6cc47507bf92ae23630fe692d33e268",
+      "revision": "e8a5555a36fb80b9fd9dc03bd99a71ca2a48f7ea",
       "url": "/home/eva/prawnix-secrets-solidsnake/",
       "hash": "sha256-VQaj1HCyjFIQn6TMEdI78lmy/5vb+CPpof2ZbDxJ+8Q=",
-      "lastModified": 1779570875,
+      "lastModified": 1793741964,
       "submodules": false
     },
     "prawnix-secrets-sunny": {
