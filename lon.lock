@@ -27,9 +27,9 @@
       "owner": "solideva",
       "repo": "kopfrot",
       "branch": "main",
-      "revision": "cc3b4a2b85777c4d7a2c96a24c2158a6d10f4c4e",
-      "url": "https://github.com/solideva/kopfrot/archive/cc3b4a2b85777c4d7a2c96a24c2158a6d10f4c4e.tar.gz",
-      "hash": "sha256-RIyqywr1a48LlfervOz2wWiET3UaeO4U9olPm2VXKeM="
+      "revision": "cfee5e04d4f775ae1f51155e3f2f0fc4a54f6cc9",
+      "url": "https://github.com/solideva/kopfrot/archive/cfee5e04d4f775ae1f51155e3f2f0fc4a54f6cc9.tar.gz",
+      "hash": "sha256-ZpoZn6tmDmU9YuqQ5o8/4iSf9WMn36p2xWf7pkTDWyA="
     },
     "lanzaboote": {
       "type": "GitHub",
