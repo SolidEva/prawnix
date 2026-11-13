@@ -22,7 +22,7 @@ in
       # base platform configuration
       (self + /modules/platform/${platform}.nix)
       # use remote builders
-      # "${sources.prawnix-secrets-raiden}/remote-builders.nix"
+      "${sources.prawnix-secrets-raiden}/remote-builders.nix"
       # configure zswap as swap
       (self + /modules/swap/zswap.nix)
       # use niri
